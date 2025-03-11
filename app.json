@@ -3,7 +3,7 @@
     "name": "rn-real-estate",
     "slug": "rn-real-estate",
     "version": "1.0.0",
-
+    "newArchEnabled": true,
     "scheme": "rn-real-estate",
     "web": {
       "bundler": "metro",
