@@ -12,9 +12,8 @@ export default function AppLayout() {
         <ActivityIndicator className="text-primary-300" size="large" />
       </SafeAreaView>
     );
-
-    if (!isLoggedIn) return <Redirect href="/sign-in" />;
   }
+  if (!isLoggedIn) return <Redirect href="/sign-in" />;
 
   return <Slot />;
 }
