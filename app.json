@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "rn-real-estate",
-    "slug": "rn-real-estate",
+    "slug": "restate-app",
     "version": "1.0.0",
     "newArchEnabled": true,
     "scheme": "rn-real-estate",
@@ -21,38 +21,46 @@
             "./assets/fonts/Rubik-Medium.ttf",
             "./assets/fonts/Rubik-Regular.ttf",
             "./assets/fonts/Rubik-Light.ttf",
-            "/assets/fonts/Rubik-SemiBold.ttf"
+            "./assets/fonts/Rubik-SemiBold.ttf"
           ]
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,
-
       "tsconfigPaths": true
     },
-
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff",
       "enableFullScreenImage_legacy": true
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
-
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.ibu.restate"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4f000745-9cea-47ab-ae88-85e3738619d0"
       }
-    }
+    },
+    "owner": "mrkeyboard"
   }
 }
