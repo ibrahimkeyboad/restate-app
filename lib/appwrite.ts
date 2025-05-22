@@ -16,6 +16,7 @@ export const avatar = new Avatars(client);
 export const account = new Account(client);
 
 export async function login() {
+  console.log(config);
   try {
     const redirectUri = Linking.createURL('/');
 
