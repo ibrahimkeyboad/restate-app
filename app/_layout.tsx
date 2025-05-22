@@ -5,7 +5,7 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 
-import GlobalProvider from '~/lib/global-provider';
+// import GlobalProvider from '~/lib/global-provider';
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
@@ -28,12 +28,13 @@ export default function RootLayout() {
   }
 
   return (
-    <GlobalProvider>
-      <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+    // <GlobalProvider>
+    // <Stack screenOptions={{ headerShown: false }}>
+    //   <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
 
-        <Stack.Screen name="sign-in" options={{ headerShown: false }} />
-      </Stack>
-    </GlobalProvider>
+    //   <Stack.Screen name="sign-in" options={{ headerShown: false }} />
+    // </Stack>
+    // </GlobalProvider>
+    <Stack />
   );
 }
