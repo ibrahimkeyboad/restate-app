@@ -7,19 +7,19 @@ import { login } from '~/lib/appwrite';
 import { useGlobalContect } from '~/lib/global-provider';
 
 export default function SignInPage() {
-  const { refetch, loading, isLoggedIn } = useGlobalContect();
+  // const { refetch, loading, isLoggedIn } = useGlobalContect();
 
-  if (!loading && isLoggedIn) return <Redirect href="/" />;
+  // if (!loading && isLoggedIn) return <Redirect href="/" />;
 
-  async function handleLogin() {
-    const result = await login();
+  // async function handleLogin() {
+  //   const result = await login();
 
-    if (result) {
-      refetch();
-    } else {
-      Alert.alert('Error', 'Failed to login');
-    }
-  }
+  //   if (result) {
+  //     refetch();
+  //   } else {
+  //     Alert.alert('Error', 'Failed to login');
+  //   }
+  // }
 
   return (
     <SafeAreaView className="h-full bg-white">
@@ -37,14 +37,14 @@ export default function SignInPage() {
           <Text className="mt-12 text-center font-rubik text-lg text-black-200">
             Login to Restate with google
           </Text>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             onPress={handleLogin}
             className="mt-5 w-full flex-row items-center justify-center rounded-full bg-white py-4 shadow-md shadow-zinc-300">
             <Image source={icons.google} className="size-5" resizeMode="contain" />
             <Text className="text ml-2 font-rubik-medium text-lg text-black-300">
               Countinue with Google
             </Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </ScrollView>
     </SafeAreaView>
